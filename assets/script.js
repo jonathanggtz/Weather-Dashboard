@@ -36,3 +36,21 @@ function getWeather(city) {
         });
       });
   }
+  function handleCityButtonClick(event) {
+    getWeather(event.target.textContent);
+  }
+  
+  
+  var cityButtons = document.getElementsByClassName('cityButton');
+  for (var i = 0; i < cityButtons.length; i++) {
+    cityButtons[i].addEventListener('click', handleCityButtonClick);
+  }
+  
+  document.getElementById('searchButton').addEventListener('click', function(event) {
+    event.preventDefault();
+    var city = document.getElementById('city').value;
+    if (city) {
+      getWeather(city);
+    }
+  });
+  getWeather('Atlanta');
