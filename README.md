@@ -23,7 +23,7 @@ This is a weather dashboard application that provides current and 5-day weather 
 
 1. Clone this repository to your machine.
 2. Open the `index.html` file in your browser.
-3. Or navigate to this page https://2015johngtz.github.io/Weather-Dashboard/
+
 
 ## Usage Instructions
 
